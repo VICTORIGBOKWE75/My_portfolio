@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    background-color: rgb(133, 127, 127);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: 10px;
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar a{
+    padding: 10px;
+    color: white;
+}
+
+.logo{
+    color: black;
+    font-weight: 400;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.logo:hover{
+    color: white;
+    font-weight: 900;
+}
+
+span{
+    color: white;
+    font-weight: 900;
+}
+
+span:hover{
+    color: rgb(110, 71, 71);
+    font-weight: 400;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 90px 12% 30px;
+}
+
+.home .my_intro{
+    text-align: left;
+    align-self: center;
+}
+
+.home .img img{
+    border-radius: 50%;
+    width: 350px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+.about-img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px green,
+                0 0 50px green;
+    border-radius: 50%;
+}
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 62px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.resume{
+    background-color: rgb(255, 255, 255);;
+    padding: 30px 25%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: -3;
+    gap: 2rem;
+}
+.resume .institutions{
+    display: flex;
+    background-color: burlywood;
+    align-items: center;
+    padding: 20px;
+    gap: 2rem;
+    top: 10px;
+    border-radius: .8rem;
+    margin: 2rem 0;
+}
+.resume .instution-container{
+    padding: 20px;
+}
+.resume .edu-icon{
+    font-weight: 600;
+    font-size: 40px;
+    z-index: 100;
+    color: black;
+
+}
+.resume .text{
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid green;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px green, 0 0 10px green;
+    transition: 0.3s ease;
+}
+,footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: green;
+    border: 2px solid green;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid transparent;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    color: white;
+}
+
+button{
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+}
+button:hover{
+    background-color: rgb(110, 71, 71);
+}
